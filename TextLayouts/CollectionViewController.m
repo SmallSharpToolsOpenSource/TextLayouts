@@ -26,14 +26,16 @@
     [super viewDidLoad];
     
     self.labelContent = @[
-                          @"This is an example of using intrinsic size to allow a scroll view to set the size of the content automatically.",
-                          @"The amount of text should directly control the content size and the constraints should increase or decrease the content size accurately.",
-                          @"Vertical constraints between the labels will ensure the labels never overlap or are truncated. The labels themselves do not have a height constraint and rely on the intrinsic size of the label instead.",
-                          @"If there is enough text the scroll view will go beyond the bounds of the superview and cause the content size to be big enough to ensure that scrolling is possible.",
-                          @"In order to allow for a label to wrap to multiple lines the value for lines can be set to the number of lines or 0 to allow for an unlimited number of lines. How does is it working?"
+                          @"Collection View View",
+                          @"This is an example of using a collection view to display the text much like the table view.",
+                          @"Because the height of each cell must be calculated before the cell is created intrinsic height cannot be used like with the scroll view.",
+                          @"Constraints are still used to place the label but the height for the text must be calculated carefully in code.",
+                          @"What makes it tricky to calculate in code is the font values which must be precise to get an accurate calculation.",
+                          @"Since the calcuation may provide a value which is less then a whole number it is best to round it up or add an extra point value just to make sure it fits. How is it working in the Simulator?"
                           ];
 }
 
+// top and bottom layout guide could be used if the content insets are not set automatically (won't be set in viewDidLoad because constraints must be applied first)
 //- (void)viewDidLayoutSubviews {
 //    if (isiOS7OrLater) {
 //        DebugLog(@"top layout guide: %f", self.topLayoutGuide.length);
@@ -61,6 +63,8 @@
 #pragma mark - UICollectionViewDelegate
 #pragma mark -
 
+// nothing needed
+
 #pragma mark - UICollectionViewDelegateFlowLayout
 #pragma mark -
 
@@ -72,7 +76,8 @@
     NSDictionary *attributes = @{ NSFontAttributeName : font };
     CGSize size = [text boundingRectWithSize:CGSizeMake(280, CGFLOAT_MAX) options:options attributes:attributes context:nil].size;
     
-    return CGSizeMake(320, ceilf(size.height) + 12);
+    // ceilf rounds up to the next whole number
+    return CGSizeMake(320, ceilf(size.height) + 11);
 }
 
 @end

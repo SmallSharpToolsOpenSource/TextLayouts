@@ -127,12 +127,12 @@
 				26F25A5818074E0900FCECC3 /* Main.storyboard */,
 				26F25A7C18074E5000FCECC3 /* TabBarViewController.h */,
 				26F25A7B18074E5000FCECC3 /* TabBarViewController.m */,
-				26F25A8218074E5000FCECC3 /* CollectionViewController.h */,
-				26F25A7D18074E5000FCECC3 /* CollectionViewController.m */,
 				26F25A8418074E5000FCECC3 /* ScrollViewController.h */,
 				26F25A8018074E5000FCECC3 /* ScrollViewController.m */,
 				26F25A8318074E5000FCECC3 /* TableViewController.h */,
 				26F25A7E18074E5000FCECC3 /* TableViewController.m */,
+				26F25A8218074E5000FCECC3 /* CollectionViewController.h */,
+				26F25A7D18074E5000FCECC3 /* CollectionViewController.m */,
 			);
 			path = TextLayouts;
 			sourceTree = "<group>";

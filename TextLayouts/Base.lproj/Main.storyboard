@@ -60,8 +60,17 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label 6" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="fQ5-vm-CF8">
+                                        <rect key="frame" x="20" y="165" width="280" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="fQ5-vm-CF8" secondAttribute="bottom" id="0YJ-wN-00m"/>
                                     <constraint firstAttribute="centerX" secondItem="3r8-DF-ihD" secondAttribute="centerX" id="0h3-MG-xNb"/>
                                     <constraint firstItem="Yv3-HF-dzo" firstAttribute="leading" secondItem="iMh-0n-d1H" secondAttribute="leading" constant="20" symbolic="YES" id="3Ut-xl-XLJ"/>
                                     <constraint firstAttribute="trailing" secondItem="ImB-mV-JkC" secondAttribute="trailing" constant="20" symbolic="YES" id="6xK-3n-fl9"/>
@@ -69,18 +78,21 @@
                                     <constraint firstItem="3r8-DF-ihD" firstAttribute="top" secondItem="Yv3-HF-dzo" secondAttribute="bottom" constant="8" symbolic="YES" id="Buu-Vh-xVg"/>
                                     <constraint firstAttribute="centerX" secondItem="Yv3-HF-dzo" secondAttribute="centerX" id="CWG-Ca-FIG"/>
                                     <constraint firstAttribute="centerX" secondItem="mfX-eS-u0D" secondAttribute="centerX" id="EyH-bS-Bo4"/>
+                                    <constraint firstAttribute="centerX" secondItem="fQ5-vm-CF8" secondAttribute="centerX" id="F5Y-TA-sgF"/>
                                     <constraint firstItem="ImB-mV-JkC" firstAttribute="top" secondItem="iMh-0n-d1H" secondAttribute="top" constant="20" symbolic="YES" id="Fzq-h4-4LY"/>
                                     <constraint firstAttribute="trailing" secondItem="Yv3-HF-dzo" secondAttribute="trailing" constant="20" symbolic="YES" id="JNh-ta-4Ie"/>
                                     <constraint firstAttribute="trailing" secondItem="tSn-sb-RtC" secondAttribute="trailing" constant="20" symbolic="YES" id="Lx4-46-DFy"/>
+                                    <constraint firstAttribute="trailing" secondItem="fQ5-vm-CF8" secondAttribute="trailing" constant="20" symbolic="YES" id="Me6-Q1-cPU"/>
                                     <constraint firstAttribute="trailing" secondItem="3r8-DF-ihD" secondAttribute="trailing" constant="20" symbolic="YES" id="Pcp-hk-DgA"/>
                                     <constraint firstItem="tSn-sb-RtC" firstAttribute="top" secondItem="ImB-mV-JkC" secondAttribute="bottom" constant="8" symbolic="YES" id="S5R-dF-9kX"/>
-                                    <constraint firstAttribute="bottom" secondItem="3r8-DF-ihD" secondAttribute="bottom" constant="20" symbolic="YES" id="Utm-vf-zIW"/>
                                     <constraint firstItem="3r8-DF-ihD" firstAttribute="leading" secondItem="iMh-0n-d1H" secondAttribute="leading" constant="20" symbolic="YES" id="XYt-0O-MEb"/>
                                     <constraint firstItem="ImB-mV-JkC" firstAttribute="leading" secondItem="iMh-0n-d1H" secondAttribute="leading" constant="20" symbolic="YES" id="e22-Yc-boJ"/>
                                     <constraint firstAttribute="trailing" secondItem="mfX-eS-u0D" secondAttribute="trailing" constant="20" symbolic="YES" id="eaU-ML-luk"/>
                                     <constraint firstAttribute="centerX" secondItem="ImB-mV-JkC" secondAttribute="centerX" id="kDW-Ah-A5W"/>
                                     <constraint firstItem="mfX-eS-u0D" firstAttribute="top" secondItem="tSn-sb-RtC" secondAttribute="bottom" constant="8" symbolic="YES" id="klx-Wj-irw"/>
                                     <constraint firstAttribute="centerX" secondItem="tSn-sb-RtC" secondAttribute="centerX" id="mLg-Dx-fch"/>
+                                    <constraint firstItem="fQ5-vm-CF8" firstAttribute="leading" secondItem="iMh-0n-d1H" secondAttribute="leading" constant="20" symbolic="YES" id="nkp-Uc-vvt"/>
+                                    <constraint firstItem="fQ5-vm-CF8" firstAttribute="top" secondItem="3r8-DF-ihD" secondAttribute="bottom" constant="8" id="tjn-Ah-4Na"/>
                                     <constraint firstItem="tSn-sb-RtC" firstAttribute="leading" secondItem="iMh-0n-d1H" secondAttribute="leading" constant="20" symbolic="YES" id="vEV-J7-UFV"/>
                                     <constraint firstItem="mfX-eS-u0D" firstAttribute="leading" secondItem="iMh-0n-d1H" secondAttribute="leading" constant="20" symbolic="YES" id="wY3-7o-JUD"/>
                                 </constraints>
@@ -101,6 +113,7 @@
                         <outlet property="label3" destination="mfX-eS-u0D" id="NYn-rf-mLE"/>
                         <outlet property="label4" destination="Yv3-HF-dzo" id="1N9-ru-OnG"/>
                         <outlet property="label5" destination="3r8-DF-ihD" id="0JV-WE-ReE"/>
+                        <outlet property="label6" destination="fQ5-vm-CF8" id="2rB-YE-dRo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
