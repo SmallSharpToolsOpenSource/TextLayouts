@@ -33,7 +33,7 @@
         UIGraphicsBeginImageContextWithOptions(CGSizeMake(30, 30), NO, 0.0f);
         
         UIBezierPath* ovalPath = [UIBezierPath bezierPathWithOvalInRect: CGRectMake(1, 1, 28, 28)];
-        [[[UIColor whiteColor] colorWithAlphaComponent:0.5] setFill];
+        [[[UIColor whiteColor] colorWithAlphaComponent:0.4] setFill];
         [ovalPath fill];
         
         image = UIGraphicsGetImageFromCurrentImageContext();
@@ -50,7 +50,7 @@
         UIGraphicsBeginImageContextWithOptions(CGSizeMake(30, 30), NO, 0.0f);
         
         UIBezierPath* ovalPath = [UIBezierPath bezierPathWithOvalInRect: CGRectMake(1, 1, 28, 28)];
-        [[[UIColor whiteColor] colorWithAlphaComponent:0.25] setFill];
+        [[[UIColor whiteColor] colorWithAlphaComponent:0.3] setFill];
         [ovalPath fill];
         
         image = UIGraphicsGetImageFromCurrentImageContext();
