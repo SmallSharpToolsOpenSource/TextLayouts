@@ -26,7 +26,7 @@
     [super viewDidLoad];
     
     self.labelContent = @[
-                          @"Collection View View",
+                          @"Collection View",
                           @"This is an example of using a collection view to display the text much like the table view.",
                           @"Because the height of each cell must be calculated before the cell is created intrinsic height cannot be used like with the scroll view.",
                           @"Constraints are still used to place the label but the height for the text must be calculated carefully in code.",
