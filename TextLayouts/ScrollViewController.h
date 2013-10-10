@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ScrollViewController.h
 //  TextLayouts
 //
 //  Created by Brennan Stehling on 10/10/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ScrollViewController : UIViewController
 
 @end
