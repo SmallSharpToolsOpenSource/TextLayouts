@@ -1,6 +1,8 @@
 TextLayouts
 ===========
 
+<img src="https://raw.github.com/brennanMKE/TextLayouts/master/Screenshot.png" width="180" align="right" border="1" />
+
 Sample project for laying out text in iOS 7 using constraints in a scroll view, table view and collection view.
 
 Working with iOS 7 layouts with autolayout and the new style for transparent top and bottom bars can be tricky. This projects shows 3 ways to display a set of text labels using features available in iOS 7.
@@ -14,4 +16,3 @@ For the scroll view the content size is calculated using constraints and the hei
 #### Brennan Stehling - SmallSharpTools LLC - 2013
 #### [@smallsharptools](https://alpha.app.net/smallsharptools)
 #### [@smallsharpTools](http://twitter.com/smallsharptools)
-
